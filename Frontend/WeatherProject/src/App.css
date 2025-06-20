@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+html {
+    height: 100%; 
+}
+body {
+    background: whitesmoke;
+    padding: 1rem 5rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, rgba(183, 204, 248, 0.717), rgba(7, 43, 127, 0.679)), url('https://img.freepik.com/free-photo/blue-sky-with-cloud-closeup_150588-124.jpg?t=st=1710145731~exp=1710149331~hmac=312231e34af28df68a64a9b006a4a627d0f623f0ba6e19eb23e5aceae935e41e&w=360');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.header h1 {
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+#input {
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    color:white;
+    margin-right: 5px;
+    border-radius: 5px;
+    background: rgb(0, 93, 243);
+    box-shadow: 3px 3px black;
+}
+#input:hover,#input:active,#input:focus,#search:hover,#search:active,#search:focus{
+    background: rgb(5, 61, 181);
+    border: 3px rgb(255, 255, 255) solid;
+}
+#search {
+    background: none;
+    padding: 5px 20px;
+    color: aliceblue;
+    box-shadow: 3px 3px black;
+    background:rgb(23, 111, 253);
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.weather {
+    text-align: center;
+    color: aliceblue;
+}
+#city {
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    color:black;
+}
+.weather img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: rgba(240, 248, 255, 0.408);
+}
+#temperature {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.temp-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+#clouds {
+    font-size: 20px;
+    background: linear-gradient(150deg,rgb(23, 111, 253),rgb(9, 4, 91));
+    padding: 2px 20px;
+    box-shadow: 1.5px 1.5px black;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+}
+main {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    margin: 0 25px;
+    color: white;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 10%;
+}
+.next {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0%;
+}
+.next p,.next h3 {
+    margin: 3px 0;
+}
+.forecstD {
+    margin: 0px 14%;
+    color: aliceblue;
+    position: absolute;
+    right: 0%;
+}
+.weekF {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.cast-header {
+    color: aliceblue;
+    background: linear-gradient(150deg,rgb(0, 141, 241),rgb(27, 9, 129));
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    box-shadow: 1.5px 1.5px black;
+    margin-top: 0%;
+    padding-top: 0%;
+    border: 2px solid rgb(0, 0, 0);
+}
+.divider1,.divider2 {
+    background: rgb(27, 9, 129);
+    height: 200px;
+    border-radius:5px;
+    margin:0px 0px 20px;
+}
+.divider2 {
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+}
+.time,.date {
+    color: rgb(0, 157, 255);
+}
+.desc {
+    color: rgb(16, 0, 94);
+}
+.dayF{
+    align-self: center;
+    padding: 0%;
+    margin: 0%;
+}
+p{
+    padding: 3%;
+    margin: 0%;
+}
