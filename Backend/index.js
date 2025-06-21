@@ -5,7 +5,11 @@ const app=express();
 require('dotenv').config();
 const PORT=process.env.PORT||5000;
 mongoose.connect(process.env.MONGODBURI);
-app.use(cors());
+app.use(cors({
+  origin:["https://weather-website-eosin.vercel.app"],
+  method:["POST","GET"],
+  credentials:true
+}));
 app.use(express.json());
 const WeatherData=mongoose.model('WeatherData', {
   city: String,
