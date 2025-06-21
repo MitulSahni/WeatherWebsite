@@ -42,7 +42,7 @@ export default function App() {
   }
   const saveWeatherData = async (data) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/weather', {
+      const response = await axios.post('https://weatherwebsite-p3vw.onrender.com/api/weather', {
         city: data.name,
         country: data.sys.country,
         temperature: Math.floor(data.main.temp - 273),
